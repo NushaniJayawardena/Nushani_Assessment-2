@@ -1,10 +1,10 @@
 # Nushani_Assessment-2
 This file contains the automated script file for the test cases.
 
-This code defines three test cases written in Playwright, a powerful end-to-end testing framework, to validate specific functionalities on the Wiley Online Library website. Here's a brief overview of each test case:
+This code defines three test cases written in Playwright, to validate specific functionalities on the Wiley Online Library website. Here's a brief overview of each test case:
 
 1. Verify navigation to the login page on clicking individual login
-Purpose: Ensures that clicking the "Individual login" option from the Login/Register dropdown correctly navigates to the login page.
+Purpose: Ensures that clicking the "Individual login" option from the Login/Register dropdown correctly navigates to the individual login page.
 Steps:
 Navigate to the homepage (https://onlinelibrary.wiley.com/).
 Click on the Login/Register button to display the dropdown.
@@ -16,7 +16,7 @@ Purpose: Verifies that the Advanced search link navigates the user to the advanc
 Steps:
 Navigate to the homepage.
 Click the "Advanced search" link.
-Confirm the current URL contains the path /search/advanced, indicating correct navigation.
+Confirm the current URL indicates correct navigation.
 
 3. Verify login dropdown visibility when clicking on the Login/Register label
 Purpose: Confirms that clicking the Login/Register button opens a dropdown menu.
