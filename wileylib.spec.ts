@@ -1,8 +1,8 @@
-//importing 'test' and 'expect'modules from playwright testing library//
+//importing 'test' and 'expect'modules from playwright testing library
 
 import { test, expect } from '@playwright/test';
 
-//test case to Verify navigation to the login page on clicking individual login//
+//test case to Verify navigation to the login page on clicking individual login
 
 test('Verify navigation to the login page on clicking individual login', async ({ page }) => {
   // Navigate to the Wiley website
@@ -22,7 +22,7 @@ test('Verify navigation to the login page on clicking individual login', async (
   await expect(page).toHaveURL(/.*action\/showLogin.*/); // Allow flexibility for query parameters
 });
 
-//test case to Check Advanced search navigation//
+//test case to Check Advanced search navigation
 
 test('Check Advanced search navigation', async ({ page }) => {
   // Navigate to the Wiley website
@@ -38,7 +38,7 @@ test('Check Advanced search navigation', async ({ page }) => {
   expect(currentURL).toContain('/search/advanced'); // Verify that it includes the expected path
 });
 
-//test case to Verify login dropdown visibility when clicking on the Login/Register label//
+//test case to Verify login dropdown visibility when clicking on the Login/Register label
 
 test('Verify login dropdown visibility when clicking on the Login/Register label', async ({ page }) => {
   // Navigate to the Wiley website
